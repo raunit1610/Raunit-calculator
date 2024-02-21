@@ -1,17 +1,28 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom right, #84fab0, #8fd3f4);
+    animation: gradientAnimation 10s infinite alternate-reverse;
+}
+
 .grid_container {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: 130px repeat(4, 52px);
     gap: 13px;
     width: 50%;
-    position: absolute;
-    top: 20%; 
-    left: 25%; 
-    background-color: #f3f3f3;
+    position: relative;
+    background-color: rgba(255, 255, 255, 0.8);
     border-radius: 10px;
-    padding: 15px; 
+    padding: 15px;
     overflow: hidden;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .result {
@@ -90,4 +101,12 @@ p {
 
 .clear:active {
     transform: scale(0.95);
+}
+@keyframes gradientAnimation {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
 }
