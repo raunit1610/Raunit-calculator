@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prac.css">
+    <script defer src="./calculator.js"></script>
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="result card" id="result">0</div>
+        <div class="button card" onclick="appendNumber(1)">1</div>
+        <div class="button card" onclick="appendNumber(2)">2</div>
+        <div class="button card" onclick="appendNumber(3)">3</div>
+        <div class="operator cards" onclick="appendOperator('+')">+</div>
+        <div class="button card" onclick="appendNumber(4)">4</div>
+        <div class="button card" onclick="appendNumber(5)">5</div>
+        <div class="button card" onclick="appendNumber(6)">6</div>
+        <div class="operator cards" onclick="appendOperator('-')">-</div>
+        <div class="button card" onclick="appendNumber(7)">7</div>
+        <div class="button card" onclick="appendNumber(8)">8</div>
+        <div class="button card" onclick="appendNumber(9)">9</div>
+        <div class="operator cards" onclick="appendOperator('/')">/</div>
+        <div class="button card" onclick="appendNumber(0)">0</div>
+        <div class="operator cards" onclick="appendOperator('**')">pow</div>
+        <div class="operator cards" onclick="appendOperator('*')">*</div>
+        <div class="clear submit" onclick="clearResult()">C</div>
+        <div class="submit" onclick="calculate()">Ent</div>
+    </div>
+</body>
+</html>

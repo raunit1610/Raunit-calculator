@@ -1,0 +1,93 @@
+.grid_container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 130px repeat(4, 52px);
+    gap: 13px;
+    width: 50%;
+    position: absolute;
+    top: 20%; 
+    left: 25%; 
+    background-color: #f3f3f3;
+    border-radius: 10px;
+    padding: 15px; 
+    overflow: hidden;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2); 
+}
+
+.result {
+    grid-column: span 4;
+    background-color: #fff;
+    text-align: right;
+    padding: 15px; 
+    font-size: 1.8em; 
+    overflow: hidden;
+    animation: slideIn 0.5s ease-in-out;
+}
+
+.card {
+    background-color: #ffc0cb;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8em; 
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.card:hover {
+    background-color: #ff69b4;
+}
+
+.cards {
+    background-color: #7fffd4;
+    transition: transform 0.2s ease-in-out;
+    font-size: 1.8em; 
+    cursor: pointer;
+    left: 20%;
+}
+
+.cards:active {
+    transform: scale(0.95);
+}
+
+.operator {
+    background-color: #87ceeb;
+    transition: transform 0.2s ease-in-out;
+}
+
+.operator:active {
+    transform: scale(0.95);
+}
+
+.submit {
+    background-color: #ffebcd;
+    transition: transform 0.2s ease-in-out;
+}
+
+.submit:active {
+    transform: scale(0.95);
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+p {
+    margin: 0;
+}
+
+.clear {
+    background-color: #ff6347;
+    font-size: 1.8em;
+}
+
+.clear:active {
+    transform: scale(0.95);
+}
