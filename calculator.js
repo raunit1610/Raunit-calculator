@@ -58,4 +58,5 @@ function clr_hist() {
     res.splice(0,res.length);
     const historyList = document.getElementById('history');
     historyList.innerHTML = "";
+    clearResult();
 }
