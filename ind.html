@@ -1,0 +1,46 @@
+<!-- index.html -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./prac.css">
+    <script defer src="./calculator.js"></script>
+    <title>Scientific Calculator</title>
+</head>
+<body>
+    <div class="grid_container">
+        <div class="result card" id="result">0</div>
+        <div class="button card" onclick="appendNumber(1)">1</div>
+        <div class="button card" onclick="appendNumber(2)">2</div>
+        <div class="button card" onclick="appendNumber(3)">3</div>
+        <div class="operator cards" onclick="generateCosValue()"><center><strong>cos</strong></center></div>
+        <div class="button card" onclick="appendNumber(4)">4</div>
+        <div class="button card" onclick="appendNumber(5)">5</div>
+        <div class="button card" onclick="appendNumber(6)">6</div>
+        <div class="operator cards" onclick="generateSinValue()"><center><strong>sin</strong></center></div>
+        <div class="button card" onclick="appendNumber(7)">7</div>
+        <div class="button card" onclick="appendNumber(8)">8</div>
+        <div class="button card" onclick="appendNumber(9)">9</div>
+        <div class="operator cards" onclick="generateTanValue()"><center><strong>tan</strong></center></div>
+        <div class="button card" onclick="appendNumber(0)">0</div>
+        <div class="button card" onclick="appendBracket('(')"><center><strong>(</strong></center></div>
+        <div class="button card" onclick="appendBracket(')')"><center><strong>)</strong></center></div>
+        <div class="operator cards" onclick="calculateExponential()"><center><emp>e</emp></center></div>
+        <div class="button card" onclick="appendNumber(3.141)"><center><strong>&#x3A0;</strong></center></div>
+        <div class="operator cards" onclick="calculateLog()"><center><strong>log</strong></center></div>
+        <div class="operator cards" onclick="calculateLn()"><center><strong>ln</strong></center></div>
+        <div class="operator cards" onclick="calculateFactorial()"><center><strong>!</strong></center></div>
+        <div class="operator cards" onclick="switchToDegree()"><center><strong>&#xb0;</strong></center></div>
+        <div class="operator cards" onclick="switchToRadian()"><center><strong>rad</strong></center></div>
+        <div class="operator cards" onclick="calculateInverse()"><center><strong>inv</strong></center></div>
+        <div class="submit" onclick="calculate()"><center><strong>&#x3d;</strong></center></div>
+        <button onclick="hist()">History</button>
+        <div class="clear submit" onclick="clearResult()"><center><strong>C</strong></center></div>
+        <button onclick="clr_hist()">Clear History</button>
+        <button onclick="change_to_nom()" style='font-size:30px;'>&#8633;</button>
+    </div>
+    <div id="history"></div>
+</body>
+</html>
