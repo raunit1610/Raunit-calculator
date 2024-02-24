@@ -78,6 +78,15 @@ body {
     transform: scale(0.95);
 }
 
+.clear {
+    background-color: #ff6347;
+    font-size: 1.8em;
+}
+
+.clear:active {
+    transform: scale(0.95);
+}
+
 @keyframes slideIn {
     from {
         transform: translateY(-50px);
@@ -89,15 +98,6 @@ body {
     }
 }
 
-.clear {
-    background-color: #ff6347;
-    font-size: 1.8em;
-}
-
-.clear:active {
-    transform: scale(0.95);
-}
-
 @keyframes gradientAnimation {
     0% {
         background-position: 0% 0%;
@@ -106,7 +106,6 @@ body {
         background-position: 100% 100%;
     }
 }
-
 
 .history {
     margin-top: 20px;
