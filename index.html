@@ -1,3 +1,5 @@
+<!-- index.html -->
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./prac.css">
     <script defer src="./calculator.js"></script>
-    <title>Calculator</title>
+    <title>Normal Calculator</title>
 </head>
 <body>
     <div class="grid_container">
@@ -23,13 +25,17 @@
         <div class="button card" onclick="appendNumber(9)">9</div>
         <div class="operator cards" onclick="appendOperator('/')"><center><strong>&#xf7;</strong></center></div>
         <div class="button card" onclick="appendNumber(0)">0</div>
-        <div class="operator cards" onclick="appendOperator('**')"><center><strong>&#x2227;</strong></center></div>
+        <div class="button card" onclick="appendBracket('(')"><center><strong>(</strong></center></div>
+        <div class="button card" onclick="appendBracket(')')"><center><strong>)</strong></center></div>
         <div class="operator cards" onclick="appendOperator('*')"><center><strong>&#xd7;</strong></center></div>
-        <div class="clear submit" onclick="clearResult()"><center><strong>C</strong></center></div>
+        <div class="operator card" onclick="calculatePercentage()"><center><strong>&#x25;</strong></center></div>
+        <div class="operator cards" onclick="appendOperator('**')"><center><strong>&#x2227;</strong></center></div>
+        <div class="operator cards" onclick="appendSqrt()"><center><strong>&#8730;</strong></center></div>
         <div class="submit" onclick="calculate()"><center><strong>&#x3d;</strong></center></div>
         <button onclick="hist()">History</button>
-        <div class="button card" onclick="appendNumber(3.141)"><center><strong>&#x3A0;</strong></center></div>
+        <div class="clear submit" onclick="clearResult()"><center><strong>C</strong></center></div>
         <button onclick="clr_hist()">Clear History</button>
+        <button onclick="change_to_sci()" style='font-size:30px;'>&#8633;</button>
     </div>
     <div id="history"></div>
 </body>
